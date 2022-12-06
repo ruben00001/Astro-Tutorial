@@ -1,0 +1,23 @@
+---
+import Hamburger from './Hamburger.astro';
+import Navigation from './Navigation.astro';
+import ThemeIcon from './ThemeIcon.astro';
+
+const platform = "github";
+const username = "withastro";
+---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<header>
+  <nav>
+    <Hamburger />
+    <ThemeIcon />
+    <Navigation />
+  </nav>
+</header>
