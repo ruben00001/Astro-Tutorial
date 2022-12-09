@@ -1,6 +1,9 @@
 ---
 import '../styles/global.css';
 
+import { Image } from "@astrojs/image/components";
+import image1 from "../images/butterfly/1.jpg";
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting';
 
@@ -10,5 +13,6 @@ const pageTitle = "Home Page";
 <BaseLayout pageTitle={pageTitle}>
 	<!-- <Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} /> -->
 	<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+	<Image src={image1} alt="" />
 </BaseLayout>
 

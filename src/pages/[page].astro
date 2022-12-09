@@ -1,0 +1,11 @@
+---
+export async function getStaticPaths() {
+  return [
+    {params: {page: 'hello'}},
+    {params: {page: 'hello again'}},
+  ] 
+}
+
+const {page} = Astro.params
+---
+<div>{page}</div>
